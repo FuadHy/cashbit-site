@@ -100,7 +100,7 @@
     border: none; border-radius: 999px; padding: .75rem 1.8rem;
     font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500;
     cursor: pointer; text-decoration: none; transition: all .2s;
-    box-shadow: 0 4px 20px rgba(91,95,239,.35);
+    box-shadow: 0 4px 20px rgba(12, 13, 20, 0.35);
   }
   .btn-primary:hover { background: var(--indigo-dark); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(91,95,239,.4); }
 
@@ -322,6 +322,8 @@
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .steps-grid { grid-template-columns: 1fr; max-width: 340px; margin: 0 auto; }
     .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    .hero-text {order: 2;}
+    .hero-phones {order: 1;}  
   }
   @media (max-width: 600px) {
     nav { padding: 1rem 1.2rem; }
@@ -340,12 +342,12 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <img src="/logo.png" alt="CashBit Logo" style="width: 42px; height: 42px; object-fit: contain;" />
-    <span>CASHBIT</span>
+    <img src="/logo.png" alt="CashBit Logo" style="width: 80px; height: 42px; object-fit: contain;" />
+    <!-- <span>CASHBIT</span> -->
   </div>
   <div class="nav-links">
     <a href="#features">Features</a>
-    <a href="#screenshots">Screenshots</a>
+    <a href="#screenshots">Demo</a>
     <a href="#how">How it works</a>
   </div>
   <a href="#" class="nav-cta">Get Started</a>
@@ -360,18 +362,18 @@
   <div class="hero-blob hero-blob-2"></div>
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="hero-badge"><span class="hero-badge-dot"></span> Built for Ethiopian businesses</div>
+      <!-- <div class="hero-badge"><span class="hero-badge-dot"></span> Built for Ethiopian businesses</div> -->
       <h1>Manage your business <span>easily</span> with CashBit</h1>
-      <p class="hero-sub">Track sales, manage inventory, monitor cash flow, and run multiple branches — all from your phone. Designed for businesses across Ethiopia.</p>
+      <p class="hero-sub">Ethiopia's leading business management app. Track sales, manage inventory, monitor cash flow, and run multiple branches — all from your phone. Designed for all businesses.</p>
       <div class="hero-actions">
-        <a href="https://drive.google.com/file/d/1oYKosovk6YlvDlxxq8uY_DfGa3OILUXT/view?usp=sharing" target="_blank" class="btn-primary">📲 Download Free</a>
+        <a href="https://drive.google.com/file/d/1oYKosovk6YlvDlxxq8uY_DfGa3OILUXT/view?usp=sharing" target="_blank" class="btn-primary">Download Free</a>
         <a href="#screenshots" class="btn-secondary">See how it works</a>
       </div>
     </div>
     <div class="hero-phones">
       <div class="phone-wrap secondary">
         <div class="phone-shell">
-          <div class="phone-notch"></div>
+          <!-- <div class="phone-notch"></div> -->
           <div class="phone-screen">
             <img src="/s1.png" alt="Sales Screen">
           </div>
@@ -379,7 +381,7 @@
       </div>
       <div class="phone-wrap primary">
         <div class="phone-shell">
-          <div class="phone-notch"></div>
+          <!-- <div class="phone-notch"></div> -->
           <div class="phone-screen">
             <img src="/s2.png" alt="Welcome Screen">
           </div>
@@ -392,9 +394,9 @@
 <!-- STATS -->
 <div class="stats-bar">
   <div class="stats-inner">
-    <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Active Businesses</div></div>
-    <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Cities in Ethiopia</div></div>
-    <div class="stat-item"><div class="stat-num">99.9%</div><div class="stat-label">Uptime Reliability</div></div>
+    <div class="stat-item"><div class="stat-num">5+</div><div class="stat-label">Active Businesses</div></div>
+    <div class="stat-item"><div class="stat-num">1+</div><div class="stat-label">Cities in Ethiopia</div></div>
+    <div class="stat-item"><div class="stat-num">99.99%</div><div class="stat-label">Uptime Reliability</div></div>
     <div class="stat-item"><div class="stat-num">Free</div><div class="stat-label">To Get Started</div></div>
   </div>
 </div>
@@ -407,32 +409,32 @@
     <p class="section-sub">From daily cash tracking to multi-branch management — CashBit handles it all in one simple app.</p>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon">🛍️</div>
+        <div class="feature-icon"></div>
         <h3>Point of Sale</h3>
         <p>Add products, scan barcodes, and process sales lightning fast. Supports multiple pricing units and categories.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">💰</div>
+        <div class="feature-icon"></div>
         <h3>Cash Book</h3>
         <p>Log cash in and out with notes. See your running balance at a glance with detailed transaction history.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📦</div>
+        <div class="feature-icon"></div>
         <h3>Inventory Tracking</h3>
         <p>Monitor stock levels across products. Get alerts before you run out. Supports retail, wholesale, and manufacturing.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🏢</div>
+        <div class="feature-icon"></div>
         <h3>Multi-Branch</h3>
         <p>Register multiple branches and manage them all from one account. Switch between branches instantly.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📊</div>
+        <div class="feature-icon"></div>
         <h3>Reports & Analytics</h3>
         <p>See sales trends, top products, and cash flow by day, week, or month. Know your business inside out.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">👥</div>
+        <div class="feature-icon"></div>
         <h3>Team Management</h3>
         <p>Add staff with role-based access. Track who made each transaction. Lock the register when stepping away.</p>
       </div>
@@ -463,30 +465,35 @@
           <img src="/s3.png" alt="Sales">
         </div>
       </div>
+      <!-- <div class="screenshot-mockup mid">
+        <div class="screenshot-mockup-screen">
+          <img src="/s4.png" alt="Cash Book">
+        </div>
+      </div> -->
       <div class="screenshot-mockup mid">
         <div class="screenshot-mockup-screen">
-          <img src="/s2.png" alt="Cash Book">
+          <img src="/s4.png" alt="Cash Book">
         </div>
       </div>
       
 
       <div class="screenshot-info">
         <div class="screenshot-feature-item">
-          <div class="icon">📲</div>
+          <!-- <div class="icon">📲</div> -->
           <div>
             <h4>Phone-first design</h4>
-            <p>Optimized for the way Ethiopian entrepreneurs actually work — on the go.</p>
+            <p>Optimized for simple, intuitive use — on the go.</p>
           </div>
         </div>
         <div class="screenshot-feature-item">
-          <div class="icon">🇪🇹</div>
+          <!-- <div class="icon">🇪🇹</div> -->
           <div>
             <h4>ETB Currency native</h4>
             <p>All prices and transactions in Ethiopian Birr, no conversion needed.</p>
           </div>
         </div>
         <div class="screenshot-feature-item">
-          <div class="icon">⚡</div>
+          <!-- <div class="icon">⚡</div> -->
           <div>
             <h4>Works offline too</h4>
             <p>Record sales even without internet. Syncs when you reconnect.</p>
@@ -527,15 +534,15 @@
 <section class="cta-section">
   <div class="cta-inner">
     <h2>Ready to grow your business?</h2>
-    <p>Join hundreds of Ethiopian business owners who already use CashBit to manage their sales, inventory, and cash every day.</p>
-    <a href="https://drive.google.com/file/d/1oYKosovk6YlvDlxxq8uY_DfGa3OILUXT/view?usp=sharing" target="_blank" class="btn-white">📲 Download CashBit Free</a>
+    <p>Join many Ethiopian business owners who already use CashBit to manage their sales, inventory, and cash every day.</p>
+    <a href="https://drive.google.com/file/d/1oYKosovk6YlvDlxxq8uY_DfGa3OILUXT/view?usp=sharing" target="_blank" class="btn-white">Download CashBit for Free</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">CASHBIT</div>
-  <p>© 2026 CashBit. Built with ❤️ for Ethiopian businesses.</p>
+  <p>© 2026 CashBit.</p>
 </footer>
 
 </body>
