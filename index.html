@@ -208,6 +208,48 @@
   .feature-card h3 { font-family: sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; }
   .feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.6; }
 
+  /* ── LOCAL PAYMENTS ── */
+  .payments-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(180deg, #f8f9ff 0%, #fff 100%);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .payments-layout {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; align-items: center;
+  }
+  .payments-copy .section-sub { margin-bottom: 1.8rem; }
+  .payment-points { display: grid; gap: .85rem; }
+  .payment-point {
+    display: flex; gap: .8rem; align-items: flex-start;
+    color: var(--muted); font-size: .92rem; line-height: 1.55;
+  }
+  .payment-point-mark {
+    width: 24px; height: 24px; flex: 0 0 24px; border-radius: 50%;
+    display: grid; place-items: center; background: rgba(91,95,239,.12);
+    color: var(--indigo); font-size: .8rem; font-weight: 800;
+  }
+  .bank-logo-panel {
+    background: #fff; border: 1px solid var(--border); border-radius: 28px;
+    padding: 1.4rem; box-shadow: 0 20px 55px rgba(34,40,90,.09);
+  }
+  .bank-logo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem; }
+  .bank-logo-card {
+    min-height: 116px; padding: 1rem; border-radius: 18px;
+    background: var(--surface); border: 1px solid var(--border);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .65rem;
+  }
+  .bank-logo-card img { width: 58px; height: 48px; object-fit: contain; }
+  .bank-logo-card img.wide { width: 120px; }
+  .bank-logo-card span { font-size: .8rem; color: var(--muted); font-weight: 600; text-align: center; }
+  .bank-more {
+    margin-top: .9rem; padding: .9rem; border-radius: 16px;
+    color: var(--indigo); background: rgba(91,95,239,.08);
+    text-align: center; font-size: .86rem; font-weight: 700;
+  }
+  .bank-disclaimer { margin: 1rem .25rem 0; color: var(--muted); font-size: .68rem; line-height: 1.45; }
+
   /* ── SCREENSHOTS SECTION ── */
   .screenshots-section {
     background: linear-gradient(135deg, #1a1a2e 0%, #2d2b8a 50%, #1a1a2e 100%);
@@ -291,6 +333,53 @@
   }
   .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,.2); }
 
+  /* ── SUBSCRIPTION PORTAL ── */
+  .subscription-section { padding: 5rem 2rem; background: #eef0ff; }
+  .subscription-shell {
+    max-width: 940px; margin: 0 auto; padding: 2.2rem;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 28px;
+    box-shadow: 0 22px 70px rgba(59,62,199,.12);
+  }
+  .subscription-head { display: flex; justify-content: space-between; gap: 2rem; align-items: flex-start; margin-bottom: 2rem; }
+  .subscription-head p { color: var(--muted); line-height: 1.65; max-width: 570px; }
+  .security-note { display: inline-flex; align-items: center; gap: .45rem; color: var(--green); font-size: .82rem; font-weight: 600; margin-top: .8rem; }
+  .portal-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 1.2rem; }
+  .portal-card { border: 1px solid var(--border); border-radius: 20px; padding: 1.4rem; background: #fbfbff; }
+  .portal-card h3 { font-family: sans-serif; font-size: 1.12rem; margin-bottom: .35rem; }
+  .portal-card > p { color: var(--muted); font-size: .88rem; line-height: 1.55; margin-bottom: 1.2rem; }
+  .field { display: grid; gap: .4rem; margin-bottom: .9rem; }
+  .field label { font-size: .78rem; font-weight: 600; color: var(--muted); }
+  .field input, .field select {
+    width: 100%; padding: .78rem .9rem; border: 1px solid var(--border); border-radius: 12px;
+    font: inherit; color: var(--text); background: #fff; outline: none;
+  }
+  .field input:focus, .field select:focus { border-color: var(--indigo); box-shadow: 0 0 0 3px rgba(91,95,239,.1); }
+  .portal-button {
+    width: 100%; border: 0; border-radius: 12px; padding: .82rem 1rem; cursor: pointer;
+    background: var(--indigo); color: #fff; font: inherit; font-weight: 600; transition: .2s;
+  }
+  .portal-button:hover { background: var(--indigo-dark); transform: translateY(-1px); }
+  .portal-button:disabled { opacity: .55; cursor: wait; transform: none; }
+  .portal-button.secondary { background: #eceeff; color: var(--indigo-dark); margin-top: .7rem; }
+  .portal-message { display: none; padding: .72rem .85rem; border-radius: 11px; font-size: .84rem; line-height: 1.45; margin-top: .9rem; }
+  .portal-message.show { display: block; }
+  .portal-message.error { color: #b42318; background: #fff0ef; }
+  .portal-message.success { color: #087a40; background: #eaf9f1; }
+  .portal-dashboard { display: none; }
+  .portal-dashboard.show { display: block; }
+  .portal-login.hidden { display: none; }
+  .status-card { padding: 1.1rem; border-radius: 16px; background: #121528; color: #fff; margin-bottom: 1rem; }
+  .status-label { color: rgba(255,255,255,.55); font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; }
+  .status-value { font-family: sans-serif; font-size: 1.45rem; font-weight: 800; margin-top: .35rem; text-transform: capitalize; }
+  .status-meta { color: rgba(255,255,255,.7); font-size: .8rem; margin-top: .35rem; }
+  .plan-row { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; margin-bottom: .9rem; }
+  .plan-choice { border: 1px solid var(--border); border-radius: 14px; padding: .85rem; cursor: pointer; background: #fff; }
+  .plan-choice.selected { border-color: var(--indigo); background: #f0f1ff; box-shadow: inset 0 0 0 1px var(--indigo); }
+  .plan-choice strong { display: block; font-family: sans-serif; }
+  .plan-choice span { display: block; color: var(--muted); font-size: .76rem; margin-top: .25rem; }
+  .portal-user { font-size: .86rem; color: var(--muted); margin-bottom: 1rem; }
+  .portal-user strong { color: var(--text); }
+
   /* ── FOOTER ── */
   footer {
     background: #0f0f1a; color: rgba(255,255,255,.5);
@@ -320,6 +409,7 @@
     .hero-actions { justify-content: center; }
     .hero-phones { margin-top: 2rem; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .payments-layout { grid-template-columns: 1fr; gap: 2.5rem; }
     .steps-grid { grid-template-columns: 1fr; max-width: 340px; margin: 0 auto; }
     .stats-inner { grid-template-columns: repeat(2, 1fr); }
     .hero-text {order: 2;}
@@ -330,10 +420,17 @@
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
     .features-grid { grid-template-columns: 1fr; }
+    .payments-section { padding: 3.5rem 1.2rem; }
+    .bank-logo-panel { padding: 1rem; border-radius: 22px; }
+    .bank-logo-card { min-height: 104px; }
     .stats-inner { grid-template-columns: repeat(2, 1fr); }
     h1 { font-size: 2.1rem; }
     .phone-shell { width: 170px; }
     .phone-wrap.secondary { transform: translateX(20px) translateY(25px) rotate(4deg) scale(.85); }
+    .subscription-section { padding: 3rem 1rem; }
+    .subscription-shell { padding: 1.35rem; border-radius: 22px; }
+    .subscription-head { display: block; }
+    .portal-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -347,10 +444,12 @@
   </div>
   <div class="nav-links">
     <a href="#features">Features</a>
+    <a href="#payments">Payments</a>
     <a href="#screenshots">Demo</a>
     <a href="#how">How it works</a>
+    <a href="#subscription">Subscription</a>
   </div>
-  <a href="#" class="nav-cta">Get Started</a>
+  <a href="#subscription" class="nav-cta">Manage subscription</a>
   <div class="nav-hamburger">
     <span></span><span></span><span></span>
   </div>
@@ -438,6 +537,32 @@
         <h3>Team Management</h3>
         <p>Add staff with role-based access. Track who made each transaction. Lock the register when stepping away.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL PAYMENTS -->
+<section class="payments-section" id="payments">
+  <div class="payments-layout">
+    <div class="payments-copy">
+      <div class="section-label">CashBit Track</div>
+      <h2>Every local payment, in one clear view</h2>
+      <p class="section-sub">CashBit organizes payment alerts received from supported Ethiopian banks and wallets, giving you a clear record of money in, money out, balances, and cash flow.</p>
+      <div class="payment-points">
+        <div class="payment-point"><span class="payment-point-mark">✓</span><span>See sender or recipient details, transaction references, and account balances together.</span></div>
+        <div class="payment-point"><span class="payment-point-mark">✓</span><span>Track personal payments on one device or share a business Track with approved team members.</span></div>
+        <div class="payment-point"><span class="payment-point-mark">✓</span><span>Messages are processed on your device; CashBit does not upload your raw SMS.</span></div>
+      </div>
+    </div>
+    <div class="bank-logo-panel" aria-label="Supported Ethiopian banks and wallets">
+      <div class="bank-logo-grid">
+        <div class="bank-logo-card"><img src="/bank-cbe.png" alt="Commercial Bank of Ethiopia logo"><span>Commercial Bank of Ethiopia</span></div>
+        <div class="bank-logo-card"><img src="/bank-telebirr.png" alt="telebirr logo"><span>telebirr</span></div>
+        <div class="bank-logo-card"><img class="wide" src="/bank-boa.png" alt="Bank of Abyssinia logo"><span>Bank of Abyssinia</span></div>
+        <div class="bank-logo-card"><img class="wide" src="/bank-dashen.png" alt="Dashen Bank logo"><span>Dashen Bank</span></div>
+      </div>
+      <div class="bank-more">Also supports more banks and wallets.</div>
+      <p class="bank-disclaimer">Bank and wallet names and logos belong to their respective owners. CashBit is not affiliated with or endorsed by these institutions.</p>
     </div>
   </div>
 </section>
@@ -530,6 +655,77 @@
   </div>
 </section>
 
+<!-- SUBSCRIPTION PORTAL -->
+<section class="subscription-section" id="subscription">
+  <div class="subscription-shell">
+    <div class="subscription-head">
+      <div>
+        <div class="section-label">CashBit account</div>
+        <h2>Manage your subscription</h2>
+      </div>
+    </div>
+
+    <div class="portal-grid">
+      <div class="portal-card portal-login" id="portalLogin">
+        <h3>Sign in</h3>
+        <form id="loginForm">
+          <div class="field">
+            <label for="portalPhone">Phone number</label>
+            <input id="portalPhone" inputmode="tel" autocomplete="username" placeholder="09XXXXXXXX" required>
+          </div>
+          <div class="field">
+            <label for="portalPassword">Password</label>
+            <input id="portalPassword" type="password" autocomplete="current-password" placeholder="Your CashBit password" required>
+          </div>
+          <button class="portal-button" id="loginButton" type="submit">Sign in</button>
+        </form>
+        <div class="portal-message" id="loginMessage" role="alert"></div>
+      </div>
+
+      <div class="portal-card portal-dashboard" id="portalDashboard">
+        <div class="portal-user">Signed in as <strong id="portalUser">CashBit user</strong></div>
+        <div class="status-card">
+          <div class="status-label">Subscription status</div>
+          <div class="status-value" id="subscriptionStatus">Not started</div>
+          <div class="status-meta" id="subscriptionMeta">Choose a plan or start your one-week trial.</div>
+        </div>
+
+        <div class="plan-row" id="planChoices">
+          <button type="button" class="plan-choice selected" data-plan="mela"><strong>Mela</strong><span>For small and medium businesses</span></button>
+          <button type="button" class="plan-choice" data-plan="pro"><strong>Pro</strong><span>For larger operations</span></button>
+        </div>
+        <div class="field">
+          <label for="planDuration">Duration</label>
+          <select id="planDuration">
+            <option value="1">1 month</option>
+            <option value="3" selected>3 months</option>
+            <option value="6">6 months</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="transactionId">Telebirr transaction ID</label>
+          <input id="transactionId" autocomplete="off" placeholder="Enter the payment transaction ID">
+        </div>
+        <button class="portal-button" id="submitPayment" type="button">Submit payment for verification</button>
+        <button class="portal-button secondary" id="startTrial" type="button">Start one-week free trial</button>
+        <button class="portal-button secondary" id="portalLogout" type="button">Sign out</button>
+        <div class="portal-message" id="subscriptionMessage" role="alert"></div>
+      </div>
+
+      <div class="portal-card">
+        <h3>How payment works</h3>
+        <p>Choose your plan and duration, pay using the published CashBit Telebirr account, then enter the transaction ID. Your submission stays pending until it is verified.</p>
+        <div class="status-card">
+          <div class="status-label">Payment account</div>
+          <div class="status-value">0965 678 183</div>
+          <div class="status-meta">Telebirr · Fuad Hyredin</div>
+        </div>
+        <p style="margin:0">Free-trial eligibility and paid access are enforced by the same CashBit account service used by the mobile app.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-section">
   <div class="cta-inner">
@@ -544,6 +740,149 @@
   <div class="footer-logo">CASHBIT</div>
   <p>© 2026 CashBit.</p>
 </footer>
+
+<script>
+  (() => {
+    const API = 'https://test2.fetanequb.com/api/v1';
+    let token = sessionStorage.getItem('cashbitSubscriptionToken') || '';
+    let selectedPlan = 'mela';
+    const byId = id => document.getElementById(id);
+    const login = byId('portalLogin');
+    const dashboard = byId('portalDashboard');
+
+    const message = (element, text, kind = 'error') => {
+      element.textContent = text || '';
+      element.className = `portal-message${text ? ` show ${kind}` : ''}`;
+    };
+    const normalizePhone = value => {
+      const digits = String(value || '').replace(/\D/g, '');
+      return /^9\d{8}$/.test(digits) ? `0${digits}` : digits;
+    };
+    const request = async (path, options = {}) => {
+      const response = await fetch(`${API}${path}`, {
+        ...options,
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+          ...(options.headers || {}),
+        },
+      });
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok || body.success === false) throw new Error(body.message || 'Request failed. Please try again.');
+      return body;
+    };
+    const setLoading = (button, loading, label) => {
+      button.disabled = loading;
+      if (loading) {
+        button.dataset.label = button.textContent;
+        button.textContent = label;
+      } else if (button.dataset.label) {
+        button.textContent = button.dataset.label;
+      }
+    };
+    const showAccount = user => {
+      login.classList.add('hidden');
+      dashboard.classList.add('show');
+      byId('portalUser').textContent = user.name || user.phoneNumber || 'CashBit user';
+      const subscription = user.subscription;
+      const status = typeof subscription === 'object' ? subscription.status : subscription || 'not_started';
+      byId('subscriptionStatus').textContent = String(status).replace(/_/g, ' ');
+      if (typeof subscription === 'object') {
+        const end = subscription.endDate ? new Date(subscription.endDate).toLocaleDateString() : '';
+        byId('subscriptionMeta').textContent = `${subscription.plan || 'Active'} plan${end ? ` · valid until ${end}` : ''}`;
+      } else if (status === 'pending') {
+        byId('subscriptionMeta').textContent = 'Your payment is awaiting verification.';
+      } else if (status === 'inactive') {
+        byId('subscriptionMeta').textContent = 'Your subscription has expired. Submit a new payment below.';
+      } else {
+        byId('subscriptionMeta').textContent = 'Choose a plan or start your one-week trial.';
+      }
+    };
+    const loadAccount = async () => {
+      if (!token) return;
+      try {
+        const response = await request('/auth/user');
+        showAccount(response.data || {});
+      } catch (_) {
+        token = '';
+        sessionStorage.removeItem('cashbitSubscriptionToken');
+      }
+    };
+
+    byId('loginForm').addEventListener('submit', async event => {
+      event.preventDefault();
+      const button = byId('loginButton');
+      message(byId('loginMessage'), '');
+      setLoading(button, true, 'Signing in…');
+      try {
+        const response = await request('/auth/login', {
+          method: 'POST',
+          body: JSON.stringify({
+            phoneNumber: normalizePhone(byId('portalPhone').value),
+            password: byId('portalPassword').value,
+          }),
+        });
+        token = response.token;
+        sessionStorage.setItem('cashbitSubscriptionToken', token);
+        const account = await request('/auth/user');
+        byId('portalPassword').value = '';
+        showAccount(account.data || {});
+      } catch (error) {
+        message(byId('loginMessage'), error.message);
+      } finally {
+        setLoading(button, false);
+      }
+    });
+
+    document.querySelectorAll('.plan-choice').forEach(choice => {
+      choice.addEventListener('click', () => {
+        document.querySelectorAll('.plan-choice').forEach(item => item.classList.remove('selected'));
+        choice.classList.add('selected');
+        selectedPlan = choice.dataset.plan;
+      });
+    });
+
+    const createSubscription = async (plan, transactionId, button) => {
+      const duration = byId('planDuration').value;
+      message(byId('subscriptionMessage'), '');
+      setLoading(button, true, plan === 'trial' ? 'Starting trial…' : 'Submitting…');
+      try {
+        await request('/subscription/create', {
+          method: 'POST',
+          body: JSON.stringify({
+            plan,
+            type: duration,
+            months: Number(duration),
+            paymentMethod: 'telebirr',
+            txnId: transactionId,
+          }),
+        });
+        message(byId('subscriptionMessage'), plan === 'trial' ? 'Your free trial is active.' : 'Payment submitted. It will appear as pending until verified.', 'success');
+        const account = await request('/auth/user');
+        showAccount(account.data || {});
+      } catch (error) {
+        message(byId('subscriptionMessage'), error.message);
+      } finally {
+        setLoading(button, false);
+      }
+    };
+
+    byId('submitPayment').addEventListener('click', () => {
+      const transactionId = byId('transactionId').value.trim();
+      if (!transactionId) return message(byId('subscriptionMessage'), 'Enter your Telebirr transaction ID first.');
+      createSubscription(selectedPlan, transactionId, byId('submitPayment'));
+    });
+    byId('startTrial').addEventListener('click', () => createSubscription('trial', '', byId('startTrial')));
+    byId('portalLogout').addEventListener('click', () => {
+      token = '';
+      sessionStorage.removeItem('cashbitSubscriptionToken');
+      dashboard.classList.remove('show');
+      login.classList.remove('hidden');
+      message(byId('subscriptionMessage'), '');
+    });
+    loadAccount();
+  })();
+</script>
 
 </body>
 </html>
